@@ -1,0 +1,198 @@
+{
+  "generator": {
+    "name": "造島工坊 IsleForge",
+    "version": 1,
+    "createdAt": "2026-10-27"
+  },
+  "site": {
+    "title": "睡前怪獸",
+    "slug": "sigma",
+    "tagline": "我與我的怪獸故事",
+    "author": "sigma lee",
+    "contact": "IG: sigma lee",
+    "audience": "一般大眾",
+    "language": "zh-TW",
+    "mascot": {
+      "name": "西格馬",
+      "description": "來自外星的黑白手繪感的獨眼怪獸"
+    }
+  },
+  "islandType": {
+    "id": "life",
+    "name": "個人品牌島",
+    "description": "把你的作品、課程、服務與生活興趣，變成一個個可以逛的地點。"
+  },
+  "centerIsland": {
+    "name": "睡前怪獸",
+    "role": "中央廣場",
+    "description": "中央廣場：網站主人的自我介紹、聯絡方式，以及前往各地點的總覽。"
+  },
+  "extraLabel": "代表建築／物件",
+  "islands": [
+    {
+      "order": 1,
+      "id": "island-01",
+      "name": "呆萌怪",
+      "group": "",
+      "intro": "",
+      "points": [],
+      "extra": "",
+      "link": "",
+      "material": ""
+    },
+    {
+      "order": 2,
+      "id": "island-02",
+      "name": "屁孩怪",
+      "group": "",
+      "intro": "",
+      "points": [],
+      "extra": "",
+      "link": "",
+      "material": ""
+    },
+    {
+      "order": 3,
+      "id": "island-03",
+      "name": "難搞怪",
+      "group": "",
+      "intro": "",
+      "points": [],
+      "extra": "",
+      "link": "",
+      "material": ""
+    },
+    {
+      "order": 4,
+      "id": "island-04",
+      "name": "中二怪",
+      "group": "",
+      "intro": "",
+      "points": [],
+      "extra": "",
+      "link": "",
+      "material": ""
+    },
+    {
+      "order": 5,
+      "id": "island-05",
+      "name": "叛逆怪",
+      "group": "",
+      "intro": "",
+      "points": [],
+      "extra": "",
+      "link": "",
+      "material": ""
+    }
+  ],
+  "theme": {
+    "style": "海洋清涼",
+    "font": "手寫感",
+    "primary": "#2f7a6b",
+    "accent": "#d9792f",
+    "backgrounds": [
+      {
+        "name": "晨光",
+        "background": "#f6f0e4",
+        "default": true
+      },
+      {
+        "name": "海霧",
+        "background": "#dcebee",
+        "default": false
+      },
+      {
+        "name": "夜海",
+        "background": "#16222e",
+        "default": false
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "search",
+      "name": "搜尋",
+      "description": "用關鍵字找島嶼與內容"
+    },
+    {
+      "id": "list",
+      "name": "地點清單",
+      "description": "不用 3D 也能讀完所有內容"
+    },
+    {
+      "id": "dayNight",
+      "name": "晝夜切換",
+      "description": "白天、黃昏、夜晚光線"
+    },
+    {
+      "id": "clock",
+      "name": "即時時鐘",
+      "description": "顯示目前時間與天色"
+    },
+    {
+      "id": "reducedMotion",
+      "name": "減少動態",
+      "description": "暫停動畫，保護容易暈眩的人"
+    },
+    {
+      "id": "collection",
+      "name": "收集圖鑑",
+      "description": "已收集／未收集卡片"
+    },
+    {
+      "id": "share",
+      "name": "分享卡片",
+      "description": "產生分享用的截圖或連結"
+    },
+    {
+      "id": "people",
+      "name": "小人物散步",
+      "description": "島上有小人物沿著道路走動，增加生活感"
+    }
+  ],
+  "materials": [
+    {
+      "file": "materials/489808576_1250796110389125_2207620110202580863_n.jpg",
+      "sizeKB": 671,
+      "note": ""
+    },
+    {
+      "file": "materials/515768666_10162190685133439_8617995298882556498_n.jpg",
+      "sizeKB": 468,
+      "note": ""
+    },
+    {
+      "file": "materials/518294804_10162241992243439_7026406466507166625_n.jpg",
+      "sizeKB": 215,
+      "note": ""
+    },
+    {
+      "file": "materials/466047601_10161133432313439_6362152798605885060_n.jpg",
+      "sizeKB": 255,
+      "note": ""
+    },
+    {
+      "file": "materials/506983712_10162095707233439_8364357527282426720_n.jpg",
+      "sizeKB": 440,
+      "note": ""
+    },
+    {
+      "file": "materials/508786023_10162095707353439_2227641867548784367_n.jpg",
+      "sizeKB": 350,
+      "note": ""
+    },
+    {
+      "file": "materials/515533739_10162186289583439_2982165503339246920_n.jpg",
+      "sizeKB": 312,
+      "note": ""
+    }
+  ],
+  "webSources": [],
+  "publishMaterials": false,
+  "ai": "你的 AI 工具",
+  "deploy": {
+    "preferred": "github",
+    "label": "GitHub Pages"
+  },
+  "notes": "島上有一個美術館"
+}
