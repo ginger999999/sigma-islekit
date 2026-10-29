@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="sunrise">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="睡前怪獸｜3D 島嶼網站：一座充滿怪獸、生活感與創作故事的個人品牌島。"
+    />
+    <title>睡前怪獸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700;800&family=Noto+Sans+TC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark" aria-hidden="true">S</div>
+          <div>
+            <p class="eyebrow">睡前怪獸</p>
+            <h1>我與我的怪獸故事</h1>
+          </div>
+        </div>
+
+        <div class="toolbar" aria-label="網站工具列">
+          <div class="theme-switcher" role="group" aria-label="選擇主題色">
+            <button class="theme-btn active" data-theme="sunrise" aria-label="晨光主題">
+              <span class="swatch sunrise"></span>
+              <span>晨光</span>
+            </button>
+            <button class="theme-btn" data-theme="mist" aria-label="海霧主題">
+              <span class="swatch mist"></span>
+              <span>海霧</span>
+            </button>
+            <button class="theme-btn" data-theme="night" aria-label="夜海主題">
+              <span class="swatch night"></span>
+              <span>夜海</span>
+            </button>
+          </div>
+
+          <button id="toggleDayNight" class="tool-btn" type="button" aria-label="切換晝夜光線">
+            晝夜：白天
+          </button>
+          <button id="toggleReducedMotion" class="tool-btn" type="button" aria-label="減少動態">
+            減少動態
+          </button>
+          <button id="shareButton" class="tool-btn" type="button" aria-label="分享卡片">
+            分享卡片
+          </button>
+          <button id="toggleList" class="tool-btn" type="button" aria-label="打開地點清單">
+            地點清單
+          </button>
+        </div>
+      </header>
+
+      <main class="page-shell">
+        <section id="scenePanel" class="scene-panel" aria-label="3D 群島畫面">
+          <div class="hud-left">
+            <div class="status-box">
+              <span class="label">現在</span>
+              <strong id="timeLabel">--:--</strong>
+            </div>
+          </div>
+
+          <div class="hud-right">
+            <label class="search-box" aria-label="搜尋地點" for="searchInput">
+              <span>🔎</span>
+              <input id="searchInput" type="search" placeholder="搜尋島嶼或內容" />
+            </label>
+          </div>
+
+          <div id="sceneContainer" aria-label="3D 群島"></div>
+          <button id="resetView" class="reset-view" type="button">回到全景</button>
+
+          <div id="fallbackNotice" class="fallback-notice hidden" aria-live="polite">
+            WebGL 無法載入，已切換到文字清單版本。
+          </div>
+        </section>
+
+        <aside id="islandPanel" class="island-panel hidden" aria-live="polite" aria-label="島嶼內容面板">
+          <div class="panel-header">
+            <div>
+              <span class="panel-kicker">島嶼檔案</span>
+              <h2 id="panelTitle">睡前怪獸</h2>
+            </div>
+            <button id="closePanel" class="close-panel" type="button" aria-label="關閉內容面板">✕</button>
+          </div>
+
+          <div id="panelContent" class="panel-content"></div>
+        </aside>
+
+        <aside id="listPanel" class="list-panel hidden" aria-label="地點清單">
+          <div class="list-header">
+            <h2>地點總覽</h2>
+            <button id="closeList" class="close-panel" type="button" aria-label="關閉地點清單">✕</button>
+          </div>
+          <div id="listContent" class="list-content"></div>
+        </aside>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
